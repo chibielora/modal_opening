@@ -8,6 +8,7 @@
   <title>Modal Button</title>
 <!-- CSS Styles will mostly follow guidelines on figma -->
   <style>
+    
 .modal {
   display: block;
   width: 480px;
@@ -144,6 +145,10 @@ button {
   margin-left: 30%;
 }
 
+.next-dialogue {
+  margin-left: 50%;
+}
+
   </style>
 </head>
 <!-- HTML souce -->
@@ -156,9 +161,13 @@ button {
       <img src="https://i.imgur.com/PYX4JEv.png" id="modal-graphic" class="modal-graphic">
       <h1>Let's get going!</h1>
       <p>Follow these tips to get your <br> project off to a great start and <br> create a truly memorable book!</p>
+        <div class="next-dialogue">
+          <img id="next1" src="https://i.imgur.com/oKBCApY.png">
+          <img id="next2" src="https://i.imgur.com/oKBCApY.png">
+          <img id="next3" src="https://i.imgur.com/oKBCApY.png">
+        </div>
       <button id="container" class='container'>Next</button>
     </div>
-
   </div>
   <button id="modal-button" class="modal-button">Open modal</button>
  <!-- Script tags to open button   -->
@@ -177,6 +186,12 @@ button {
       modal.classList.toggle("closed");
       modalOverlay.classList.toggle("closed");
     });
+
+    // function generateDialog () {
+    //   for (let i = 0; i <= 3; i++) {
+    //     $("#next-dialog").append($("<img>", {id: "id" + i, src: "https://i.imgur.com/oKBCApY.png"}))
+    //   }
+    // }
   </script>
 </body>
 </html>
